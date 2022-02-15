@@ -5,11 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="index.css">
+    
 </head>
 <body>
     <h1>
         This is some changes
     </h1>
+    <h1 id="data">
+        1
+    </h1>
+    <button id="btn" onclick="incrementData()">
+        Increment +
+    </button>
+    <script>
+        const btn = document.getElementById("btn")
+        const data = document.getElementById("data")
+
+
+        function incrementData() {
+            data.innerHTML++
+        }
+    </script>
 </body>
 </html>
